@@ -7,7 +7,7 @@ export default function App () {
     <div className='main'>
       <ErrorBoundary fallback={<div>Error</div>} >
         <Suspense fallback={<div>Loading...</div>} >
-          <Data url='https://dummyjson.com/products/1' />
+          <Data url='https://dummyjson.com/products/1' shouldFetch />
         </Suspense>
       </ErrorBoundary>
     </div>
